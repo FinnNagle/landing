@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="X-Content-Type-Options"
+      content="default-src ashserv.com 127.0.0.1"
+    />
+    <meta
+      http-equiv="X-Content-Type-Options"
+      content="frame-src ashserv.com *.ashserv.com;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>home</title>
+    <script
+      src="https://kit.fontawesome.com/d038df2492.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script2.js" defer></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div id="goHome">
+        <i id="btnHome" class="fa-solid fa-house welcomeHome"></i>
+      </div>
+      <a
+        href="#"
+        id="btnHA"
+        class="btn"
+        style="background-image: url(/images/homeassistant.png)"
+      >
+        <span class="btn-text">Home Assistant</span>
+      </a>
+      <a
+        href="#"
+        id="btnNextcloud"
+        class="btn"
+        style="background-image: url(/images/nextcloud.png)"
+      >
+        <span class="btn-text">NextCloud</span>
+      </a>
+      <a
+        href="#"
+        id="btnJellyfin"
+        class="btn"
+        style="background-image: url(/images/jellyfin.png)"
+      >
+        <span class="btn-text">Jellyfin</span>
+      </a>
+      <a
+        href="#"
+        id="btnMenu"
+        class="btn"
+        style="background-image: url(/images/photoprism.png)"
+      >
+        <span class="btn-text">PhotoPrism</span>
+      </a>
+    </div>
+    <iframe
+      id="content"
+      class="hidden"
+      src="about:blank"
+      allow="fullscreen"
+      allow-same-origin
+    ></iframe>
+    <div id="photoSection" class="photos hidden">
+      <div id="ctg1" class="ctg">
+        <a
+          href="https://mcphotos.ashserv.com"
+          target="_blank"
+          class="photoFrame btn"
+          style="background-image: url(/images/photoprism.png)"
+        ><span class="btn-text">MC</span></a>
+      </div>
+      <div id="ctg2" class="ctg">
+        <a
+          href="https://dphotos.ashserv.com"
+          target="_blank"
+          class="photoFrame btn"
+          style="background-image: url(/images/photoprism.png)"
+        ><span class="btn-text">dave</span></a>
+      </div>
+      <!-- <div id="ctg3" class="ctg">
+        <a
+          href="https://cphotos.ashserv.com"
+          target="_blank"
+          class="btn"
+          style="background-image: url(/images/photoprism.png)"
+        ></a>
+        <span>Connor</span>
+      </div> -->
+    </div>
+    <div id="homeSection" class="home">
+      <div class="search-wrapper">
+        <form
+          action="http://www.google.com/search"
+          method="get"
+          class="searchForm"
+        >
+          <input
+            type="text"
+            name="q"
+            placeholder="search Google"
+            class="inputStyle"
+            tabindex="0"
+          />
+          <input type="submit" value="&#xf002" class="fa-solid fa-house submitStyle" />
+        </form>
+      </div>
+      <div class="bookmarks">
+        <a href="https://gmail.com"
+        target="_top"><img src="/images/gmail-logo-nord.png" id="gmail-img" class="bookmark-img"/>
+        </a>
+        <a href="https://facebook.com"
+        target="_top"><img src="/images/facebook-nord.png" id="fb-img" class="bookmark-img"/>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+:root {
+  /* NORD COLORS */
+  --nord-black1: #2e3440;
+  --nord-black2: #3b4252;
+  --nord-black3: #434c5e;
+  --nord-black4: #4c566a;
+  --nord-white1: #d8dee9;
+  --nord-white2: #e5e9f0;
+  --nord-white3: #eceff4;
+  --nord-blue1: #8fbcbb;
+  --nord-blue2: #88c0d0;
+  --nord-blue3: #81a1c1;
+  --nord-blue4: #5e81ac;
+  --nord-red: #bf616a;
+  --nord-orange: #d08770;
+  --nord-yellow: #ebcb8b;
+  --nord-green: #a3be8c;
+  --nord-purple: #b48ead;
+}
