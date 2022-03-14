@@ -146,6 +146,108 @@ iframe {
   cursor: default;
 }
 
+#logout {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: var(--nav-height);
+  width: var(--nav-height);
+  text-align: center;
+}
+
+#logout i {
+  padding-top: calc(0.1 * var(--nav-height));
+  padding-right: calc(0.25 * var(--nav-height));
+  font-size: 1.4rem;
+  color: var(--font-color1);
+  text-shadow: 0.03rem 0.03rem 0.1rem var(--font-color1);
+  transition: all 0.8s ease-in-out;
+}
+
+#logout > i:hover {
+  cursor: pointer;
+  color: var(--font-color2);
+  text-shadow: 0.04rem 0.04rem 0.4rem var(--font-color1);
+}
+
+#logout > i:focus {
+  color: var(--font-color2);
+  cursor: default;
+}
+
+.logoutTip {
+  position: relative;
+  display: inline-block;
+  transition: var(--btn-hover-transition);
+}
+
+.logoutTip .logoutTipText {
+  visibility: hidden;
+  color: var(--font-color1);
+  text-shadow: 0.03rem 0.03rem 0.1rem var(--font-color1);
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  width: 3rem;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: -5.2rem;
+  top: -2.5rem;
+  z-index: 1;
+  text-transform: uppercase;
+  transition: var(--btn-hover-transition);
+}
+
+.logoutTip:hover .logoutTipText {
+  visibility: visible;
+  top: 0.6rem;
+  color: var(--font-color2);
+  text-shadow: 0.04rem 0.04rem 0.4rem var(--font-color1);
+  transition: var(--btn-hover-transition);
+  transition-delay: 3.2s;
+}
+
+.homeTip {
+  position: relative;
+  display: inline-block;
+  transition: var(--btn-hover-transition);
+}
+
+.homeTip .homeTipText {
+  visibility: hidden;
+  cursor: default;
+  color: var(--font-color1);
+  text-shadow: 0.03rem 0.03rem 0.1rem var(--font-color1);
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  width: 10rem;
+  background-color: var(--bg-color);
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: -10rem;
+  top: -2.5rem;
+  z-index: 1;
+  text-transform: uppercase;
+  transition: var(--btn-hover-transition);
+}
+
+.notHome:hover .homeTipText {
+  visibility: visible;
+  top: 0.6rem;
+  color: var(--font-color2);
+  text-shadow: 0.04rem 0.04rem 0.4rem var(--font-color1);
+  transition: var(--btn-hover-transition);
+  transition-delay: 3.2s;
+}
+
 .activeFrame {
   height: var(--btn-size);
   width: calc(var(--btn-expand-ratio) * var(--btn-size));

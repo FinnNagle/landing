@@ -6,6 +6,7 @@ const frame2 = document.getElementById("content")
 const btnHome = document.getElementById("btnHome")
 const homeSection = document.getElementById("homeSection")
 const photoSection = document.getElementById("photoSection")
+const hometip = document.getElementById("goHome")
 const body = document.body
 
 // document.getElementsById("btnJellyfin").tabIndex = "1"
@@ -40,6 +41,7 @@ function goHome() {
   btnHA.classList.remove("activeFrame")
   photoSection.classList.add("hidden")
   homeSection.classList.remove("hidden")
+  hometip.classList.remove("notHome")
 }
 
 function clickAway() {
@@ -62,6 +64,7 @@ function jellyfin() {
     homeSection.classList.add("hidden")
     photoSection.classList.add("hidden")
     frame2.classList.remove("hidden")
+    hometip.classList.add("notHome")
   }
 }
 
@@ -78,6 +81,7 @@ function cloud() {
     homeSection.classList.add("hidden")
     photoSection.classList.add("hidden")
     frame2.classList.remove("hidden")
+    hometip.classList.add("notHome")
   }
 }
 
@@ -91,6 +95,7 @@ function menu() {
   btnHA.classList.remove("activeFrame")
   photoSection.classList.remove("hidden")
   homeSection.classList.add("hidden")
+  hometip.classList.add("notHome")
 }
 
 function assist() {
@@ -106,5 +111,6 @@ function assist() {
     homeSection.classList.add("hidden")
     photoSection.classList.add("hidden")
     frame2.classList.remove("hidden")
+    hometip.classList.add("notHome")
   }
 }
